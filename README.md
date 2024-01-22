@@ -1,3 +1,3 @@
-# BLOG APP USING Core React And Appwrite
+# BLOG APP Using Core React And Appwrite
 
 ### PACKAGE USED
