@@ -15,11 +15,10 @@ const App = () => {
       .getCurrentUser()
       .then((userData) => {
         if (userData) {
-          console.log(userData);
           dispatch(login({ userData }));
         } else {
           // state will always update
-          console.log("hi");
+
           dispatch(logout());
         }
       })

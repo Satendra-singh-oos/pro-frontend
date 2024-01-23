@@ -4,7 +4,7 @@ import { Container, PostForm } from "../components";
 import { useNavigate, useParams } from "react-router-dom";
 
 const EditPost = () => {
-  const [post, setPost] = useState([]);
+  const [post, setPosts] = useState(null);
 
   const { slug } = useParams();
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const EditPost = () => {
     if (slug) {
       appwriteService.getPost(slug).then((post) => {
         if (post) {
-          setPost(post);
+          setPosts(post);
         }
       });
     } else {
